@@ -5,7 +5,7 @@ tat= []
 q = 3
 
 def waitingTime(bt,q):
-    remBt = [i for i in bt]
+    remBt = bt.copy()
     wt = [0]* len(bt)
     time = 0
     count = [0]* len(bt)
