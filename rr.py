@@ -4,10 +4,12 @@ wt = []
 tat= []
 q = 3
 
-def waitingTime(bt):
-    wt = []
+def waitingTime(bt,q):
+    oldBt = bt
     time = 0
     for i in range(len(bt)):
+        if(bt[i]>q):
+            
         wt.append(time)
         time = wt[i] + bt[i]
     return wt

@@ -1,10 +1,13 @@
-process = {0:7,1:2,2:5,3:1}
-bt = [7,2,5,1]
+btDict = {0:7,1:2,2:5,3:1}
+priorityDict = {0:1,1:3,2:2,3:4}
 wt = []
 tat= []
 
-sorted_process = sorted(process,key=process.get)
-sorted_bt = sorted(bt)
+sorted_process = sorted(priorityDict,key=priorityDict.get)
+sorted_bt = [btDict[i] for i in sorted_process]
+sorted_priority = [priorityDict[i] for i in sorted_process]
+
+print(sorted_process,sorted_priority,sorted_bt)
 
 def waitingTime(bt):
     wt = []
