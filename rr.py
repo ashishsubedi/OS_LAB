@@ -10,7 +10,7 @@ def waitingTime(bt,q):
     time = 0
     count = [0]* len(bt)
     finished = [False]*len(bt)
-    # print(count,finished)
+
     while(True):
         for i in range(len(bt)):
             if(not finished[i]):
@@ -25,6 +25,7 @@ def waitingTime(bt,q):
                         wt[i] = time - (q*count[i])
                         time = time + remBt[i]
         
+        #becomes true if all values in list are true
         if(all(finished)):
             break
     return wt
