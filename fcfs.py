@@ -10,6 +10,7 @@ def waitingTime(bt):
         wt.append(time)
         time = wt[i] + bt[i]
     return wt
+    
 def turnAroundTime(bt,wt):
     tat = []
     time = 0

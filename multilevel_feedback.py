@@ -26,7 +26,7 @@ def waitingTime(p,q1,q2):
     current_queue = [p[i][1] for i in p]
     while (True):
         for i in range(n):
-            print(current_queue)
+           
             if(not finished[i]):
                 if(current_queue[i] == 1):
                     if(rem_bt[i] <= q1):

@@ -40,5 +40,4 @@ def turnAroundTime(bt,wt):
 wt = waitingTime(bt,q)
 tat = turnAroundTime(bt,wt)
 print(wt)
-print(bt)
 print("TAT\n ",tat)

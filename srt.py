@@ -24,6 +24,7 @@ def waitingTime(btDict,atDict):
                     arrived[i] = True
 
         arrived_bt = {i:x for i,x in enumerate(rem_bt) if arrived[i] == True and finished[i] == False}
+        
 
         min_index = min(arrived_bt,key=arrived_bt.get)
         rem_bt[min_index] -= 1
@@ -37,6 +38,7 @@ def waitingTime(btDict,atDict):
             break
 
     return wt
+    
 def turnAroundTime(bt,wt):
     tat = []
     time = 0
